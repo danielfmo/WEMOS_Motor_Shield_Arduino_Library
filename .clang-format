@@ -1,0 +1,10 @@
+Language: Cpp
+BasedOnStyle: Google
+AlignConsecutiveAssignments: true
+BreakBeforeBinaryOperators: NonAssignment
+BreakBeforeBraces: Attach
+BreakBeforeInheritanceComma: false
+BreakBeforeTernaryOperators: true
+ColumnLimit: 120
+IndentWidth: 4
+SortIncludes: false
