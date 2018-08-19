@@ -11,13 +11,13 @@
 #include "Wire.h"
 
 /* clang-format off */
-#define _MOTOR_A 		0
-#define _MOTOR_B 		1
-#define _SHORT_BRAKE 	0
-#define _CCW 			1
-#define _CW 			2
-#define _STOP 			3
-#define _STANDBY 		4
+#define _MOTOR_A        0
+#define _MOTOR_B        1
+#define _SHORT_BRAKE    0
+#define _CCW            1
+#define _CW             2
+#define _STOP           3
+#define _STANDBY        4
 /* clang-format on */
 
 class Motor {

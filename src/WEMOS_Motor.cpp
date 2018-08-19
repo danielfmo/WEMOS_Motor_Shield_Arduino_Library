@@ -51,7 +51,7 @@ void Motor::setfreq(uint32_t freq) {
     Wire.write((byte)(freq >> 16));
     Wire.write((byte)(freq >> 8));
     Wire.write((byte)freq);
-    Wire.endTransmission();  // stop transmitting
+    Wire.endTransmission();
 }
 
 /* setmotor() -- set motor
