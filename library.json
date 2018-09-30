@@ -1,0 +1,20 @@
+{
+    "name":        "WEMOS Motor Shield",
+    "keywords":    "motor, wemos, shield, i2c",
+    "description": "Library for the WEMOS Motor Shield",
+    "authors":
+    {
+      "name":  "danielfmo",
+      "url": "https://github.com/danielfmo",
+      "maintainer": true
+    },
+    "repository":
+    {
+      "type": "git",
+      "url":  "https://github.com/danielfmo/WEMOS_Motor_Shield_Arduino_Library"
+    },
+    "version":    "1.0.0",
+    "license": "MIT",
+    "frameworks": "arduino",
+    "platforms":  "*"
+  }
