@@ -12,6 +12,7 @@ The shield has a matrix in PCB that can be soldered in order to set the shield A
 |   -   |   x   | 0x2E    | `MOTORSHIELD_AD01`
 |   x   |   -   | 0x2F    | `MOTORSHIELD_AD10`
 |   x   |   x   | 0x30    | `MOTORSHIELD_AD11`
+
 Where 'x' means that the jumper is soldered and '-' means that the jumper is kept open.
 
 ## Motor Shield PWM resolution and max frequency:
