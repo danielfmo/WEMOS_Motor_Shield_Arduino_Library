@@ -5,18 +5,20 @@ I made a compatible firmware for the shield [here](https://github.com/danielfmo/
 
 ## Motor Shield I2C Address:
 The shield has a matrix in PCB that can be soldered in order to set the shield Address.
-|  AD0  |  AD1  | Address | MOTORSHIELD_ADDRESS enum
+
+|  AD0  |  AD1  | Address | `MOTORSHIELD_ADDRESS` enum
 | :---: | :---: | :-----: | -----------------------:
-|   -   |   -   | 0x2D    | MOTORSHIELD_AD00
-|   -   |   x   | 0x2E    | MOTORSHIELD_AD01
-|   x   |   -   | 0x2F    | MOTORSHIELD_AD10
-|   x   |   x   | 0x30    | MOTORSHIELD_AD11
+|   -   |   -   | 0x2D    | `MOTORSHIELD_AD00`
+|   -   |   x   | 0x2E    | `MOTORSHIELD_AD01`
+|   x   |   -   | 0x2F    | `MOTORSHIELD_AD10`
+|   x   |   x   | 0x30    | `MOTORSHIELD_AD11`
 Where 'x' means that the jumper is soldered and '-' means that the jumper is kept open.
 
 ## Motor Shield PWM resolution and max frequency:
 The STM32F030 MCU present on the shield have a limitation on the PWM generation, where the PWM frequency
 times the PWM steps cannot exceed the CPU frequency (8MHz). This means that there is a maximum possible frequency for a given PWM resolution.
-| PWM steps | PWM max frequency | MOTORSHIELD_PWM_RESOLUTION enum
+
+| PWM steps | PWM max frequency | `MOTORSHIELD_PWM_RESOLUTION` enum
 |      ---: |              ---: | ---
 |        64 |       65'535 (Hz) | `MOTORSHIELD_PWM_RES_64STEP` or `MOTORSHIELD_PWM_RES_6BIT`
 |       128 |       62'500 (Hz) | `MOTORSHIELD_PWM_RES_128STEP` or `MOTORSHIELD_PWM_RES_7BIT`
@@ -28,7 +30,8 @@ times the PWM steps cannot exceed the CPU frequency (8MHz). This means that ther
 
 ## Motor Shield Motor Direction:
 The shield accepts 5 'directions' to set the motor.
-|         DIRECTION |       MOTORSHIELD_ADDRESS | Description
+
+|         DIRECTION |     `MOTORSHIELD_ADDRESS` | Description
 | ----------------: | ------------------------: | -------------------------------------------------------
 |    Brake or Short |   `MOTOR_DIRECTION_BRAKE` | Stops the motor by shorting connectors (Active brake)
 | Counter-Clockwork |     `MOTOR_DIRECTION_CCW` | Turns the motor on Counter-Clockwork direction
